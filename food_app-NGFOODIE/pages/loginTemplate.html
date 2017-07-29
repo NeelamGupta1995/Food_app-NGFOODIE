@@ -1,0 +1,11 @@
+<div ng-controller="loginController" class="classLoginTemplate">
+		<form name="loginForm">
+			<input type="email" placeholder="email address" required="" ng-model="user.email">
+			<input type="password" placeholder="password" required="" ng-model="user.pass" ng-minlength="6" ng-maxlength="11" name="password">
+			<p ng-show="loginForm.password.$error.minlength" class="passwordLength">password should be greater than 6 characters</p>
+			<p ng-show="loginForm.password.$error.maxlength" class="passwordLength">password should be less than 11 characters</p>
+			
+			<button ng-click="gotoMainPage(user.email,user.pass)">LOGIN</button>
+		</form>
+		
+	</div>

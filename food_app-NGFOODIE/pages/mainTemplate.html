@@ -1,0 +1,39 @@
+<div ng-controller="mainController">
+	<header>
+		<div class="headerbar">
+			<p>FOODIE</p>
+			<ul>
+				<li><a href="#!/home"><b>Home</b></a></li>
+				<li><a href="#!/"><b>LogOut</b></a></li>
+				<li><b>About us</b></li>
+			</ul>
+		</div>
+	</header>
+	
+	<img src="https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg" height="300px" width="80%" class="centerimg">
+	<input type="text" placeholder="search restaurants...."  class="searchBar" ng-model="query"><i class="fa fa-search"></i>
+	<div ng-repeat="rest in restaurant|filter: query">
+		<div class="restWrapper">
+			<div class="divImage">
+				<img src="{{rest.image}}" height="100px" width="100px">
+			</div>
+			<div class="restInfo">
+				
+				<p><small>{{rest.category}}</small></p>
+				<a href="#!/restaurant/{{rest.id}}"><p><strong>{{rest.name}}</strong></p></a>
+				<p>{{rest.address}}</p>
+				<p>{{rest.location}}</p>
+				
+			</div>
+			<div class="restRating">
+					{{rest.vote}}
+				</div>
+			<hr>
+			<div class="restExtra">
+				<p>{{rest.cuisines}}</p>
+				<p>{{rest.cost}}</p>
+				<p>{{rest.hours}}</p>
+			</div>
+		</div>
+	</div>
+</div>

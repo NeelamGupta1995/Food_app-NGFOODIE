@@ -1,0 +1,41 @@
+<div ng-controller="restaurantController">
+	<!-- restaurant name with details -->
+		<div ng-repeat = "rest in restaurant">
+			<div ng-if = "rest.id == restId" class ="restWrapper">
+				<div class="divImage">
+					<img src="{{rest.image}}" height="100px" width="100px">
+				</div>
+				<div class="restInfo">
+					
+					<p><small>{{rest.category}}</small></p>
+					<p><strong>{{rest.name}}</strong></p>
+					<p>{{rest.address}}</p>
+					<p>{{rest.location}}</p>
+					
+				</div>
+				<div class="restRating">
+						{{rest.vote}}
+					</div>
+				<hr>
+				<div class="restExtra">
+					<p>{{rest.cuisines}}</p>
+					<p>{{rest.cost}}</p>
+					<p>{{rest.hours}}</p>
+				</div>
+				<div class="getIngredientButton">
+					<button>GET INGREDIENTS</button>
+				</div>
+			</div>
+		</div>
+	<hr>
+	<div ng-repeat="dish in foodItems" class="dishesDesign">
+		<div class="dishImageDiv">
+			<img src={{dish.url}} height="100px" width="100px">
+		</div>
+		<div class="dishDetailDiv">
+			<p class = "showInline"><b>{{dish.name}}</b></p>
+			<p class = "showPrice">Rs.{{dish.price}}.00 onwards</p>
+		</div>
+		<div><button>ADD</button></div>
+	</div>
+</div>

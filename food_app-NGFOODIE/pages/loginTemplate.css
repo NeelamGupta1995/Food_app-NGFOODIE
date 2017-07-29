@@ -1,0 +1,148 @@
+	input{
+		display:block;
+		margin:10px;
+	}
+	button{
+		display:block;
+		margin:10px;
+		margin-left: 121px;
+	}
+	.classLoginTemplate {
+    height: 203px;
+    border: 2px solid black;
+    width: 393px;
+	position: absolute;
+    left: 33%;
+    top: 30%;
+}
+form{
+	text-align: -webkit-center;
+    margin-top: 62px;
+}
+
+passwordLength {
+    margin-left: 45px;
+    font-size:12px;
+}
+/* main Template css */
+.divImage{
+		display:inline-block;
+		height: 115px;
+		width : 128px;
+}
+.centerimg{
+	margin-left:10%;
+}
+.headerbar li{
+	list-style-type:none;
+	display:inline;
+	margin-left:70%;
+	margin: 10px;
+	color: white;
+    font-family: sans-serif;
+    font-size: larger;
+}
+.headerbar a{
+	text-decoration:none;
+	color:white;
+}
+.headerbar p{
+	color: whitesmoke;
+    font-family: fantasy;
+    font-size: xx-large;
+    border: 2px solid;
+    padding: 14px;
+}
+.headerbar{
+	background-color: red;
+}
+.headerbar ul{
+	text-align: right;
+    height: 31px;
+    margin: 0px;
+    letter-spacing: 5px;
+}
+.restInfo{
+	display:inline-block;
+	height: 115px;
+	width : 400px;
+/* 	position: absolute;
+	top: 0px; */
+}
+.restWrapper{
+	border: 2px solid gray;
+	box-shadow: -11px -3px 5px 2px;
+    display: block;
+    height: 213px;
+    width: 606px;
+    padding: 21px;
+	/* position: absolute; */
+    margin-left: 25%;
+	margin-top:15px;
+    /* left: 27%; */
+}
+.restInfo p{
+	margin-bottom:-10px;
+}
+.restWrapper hr {
+    width: 607px;
+    /* position: absolute; */
+	
+	
+}
+.restExtra p{
+	margin-bottom:-10px;
+}
+.restRating{
+	vertical-align:top;
+	display: inline-block;
+    /* top: 8px;
+    right: 0px; */
+    /* position: absolute; */
+	color: white;
+    background-color: #5BA829;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+
+/* restaurant template css */
+i{
+	display :inline;
+}
+.searchBar {
+    display: inline;
+    margin: 20px;
+    width: 74%;
+    height: 37px;
+    margin-left: 11%;
+}
+.dishesDesign{
+	border: 2px solid;
+    margin: 19px;
+    height: 100px;
+    width: 427px;
+    padding: 28px;
+}
+.dishesDesign div{
+	display:inline-block;
+	vertical-align: top;
+}
+.showInline{
+	display : inline-block;
+	
+}
+.dishDetailDiv{
+	margin-left: 20px;
+	height: 95px;
+	vertical-align: 18;
+}
+.restExtra{
+	display:inline-block;
+}
+.getIngredientButton {
+    display: inline-block;
+    height: 42px;
+    vertical-align: top;
+}
